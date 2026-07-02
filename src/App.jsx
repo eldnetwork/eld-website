@@ -162,6 +162,19 @@ function App() {
           </a>
         </div>
       </header>
+      <div className="new-home__social-banner" role="status">
+        <span className="new-home__social-banner-text">
+          Follow Eld on{' '}
+          <a
+            href="https://x.com/eld_network"
+            className="new-home__social-banner-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X / Twitter
+          </a>
+        </span>
+      </div>
 
       <main id="top" className="new-home__content">
         <section className="new-home__hero">

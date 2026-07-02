@@ -32,6 +32,7 @@
   --nh-theme-toggle-color: var(--nh-faint);
   --nh-theme-toggle-bg: var(--nh-button-ghost-bg);
   --nh-theme-toggle-hover: rgba(255, 255, 255, 0.1);
+  --nh-banner-bg: #1a1208;
   position: relative;
   min-height: 100vh;
   background: var(--nh-shell-bg);
@@ -71,6 +72,7 @@
   --nh-cta-border: rgba(255, 122, 24, 0.28);
   --nh-terminal-glow: rgba(255, 122, 24, 0.18);
   --nh-theme-toggle-hover: rgba(15, 23, 42, 0.1);
+  --nh-banner-bg: #fff4eb;
 }
 
 .new-home,
@@ -135,6 +137,37 @@
   background: var(--nh-header-bg);
   border-bottom: 1px solid var(--nh-border);
   backdrop-filter: blur(10px);
+}
+
+.new-home__social-banner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 16px;
+  text-align: center;
+  background: var(--nh-banner-bg);
+  border-bottom: 1px solid var(--nh-border);
+}
+
+.new-home__social-banner-text {
+  color: var(--nh-muted);
+  font-size: 0.68rem;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.new-home__social-banner-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 160ms ease;
+}
+
+.new-home__social-banner-link:hover {
+  opacity: 0.82;
 }
 
 .new-home__header-meta {
