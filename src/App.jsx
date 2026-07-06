@@ -87,6 +87,7 @@ const footerColumns = [
   {
     heading: 'Protocol',
     items: [
+      { label: 'Litepaper', href: 'https://docs.eld.network/litepaper' },
       { label: 'Roadmap', href: 'https://docs.eld.network/roadmap' },
       { label: 'Documentation', href: 'https://docs.eld.network' }
     ],
