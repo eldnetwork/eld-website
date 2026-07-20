@@ -561,6 +561,19 @@
   letter-spacing: 0.04em;
 }
 
+.new-home__coin-panel {
+  margin-top: 84px;
+}
+
+.new-home__coin-panel-image {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
+}
+
 .new-home__cta-panel {
   margin-top: 84px;
   padding: 72px 40px;

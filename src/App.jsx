@@ -227,6 +227,16 @@ function App() {
           </div>
         </section>
 
+        <section className="new-home__coin-panel" aria-label="ELD coins">
+          <img
+            src="/coin_panel_1_1000x500.png"
+            alt="ELD hexagonal coins"
+            className="new-home__coin-panel-image"
+            width={1000}
+            height={500}
+          />
+        </section>
+
         <section id="testnet" className="new-home__cta-panel">
           <p className="new-home__eyebrow">Ignite the network</p>
           <div className="new-home__cta-copy">
