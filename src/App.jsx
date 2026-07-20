@@ -66,19 +66,6 @@ const features = [
   },
 ]
 
-const terminalStatus = [
-  '+-----------------------------+',
-  '| NODE ID  eld-node-7f3c      |',
-  '| NETWORK  testnet            |',
-  '| STATUS   ONLINE             |',
-  '| PEERS    24 connected       |',
-  '| UPTIME   99.3%              |',
-  '| STORAGE  8 / 12 GB          |',
-  '| SYNC     94.7%              |',
-  '| LATENCY  62ms               |',
-  '+-----------------------------+',
-].join('\n')
-
 const footerColumns = [
   {
     heading: 'ELD',
@@ -203,39 +190,14 @@ function App() {
             </div>
           </div>
 
-          <aside className="new-home__terminal">
-            <div className="new-home__terminal-top">
-              <div className="new-home__terminal-dots" aria-hidden="true">
-                <span />
-                <span />
-                <span />
-              </div>
-              <span className="new-home__terminal-title">eld-node - bash</span>
-            </div>
-
-            <div className="new-home__terminal-body">
-              <p className="new-home__terminal-command">//example usage:</p>
-              <p className="new-home__terminal-command">$ eld status</p>
-
-              <pre className="new-home__terminal-ascii">{terminalStatus}</pre>
-
-              <div className="new-home__earned">
-                <span>EARNED (total)</span>
-                <div className="new-home__earned-row">
-                  <div className="new-home__earned-bar">
-                    <div className="new-home__earned-fill" />
-                  </div>
-                  <strong>428.34 ELD</strong>
-                </div>
-              </div>
-
-              <div className="new-home__terminal-log">
-                <p>$ eld start --testnet</p>
-                <p>[OK] connecting to peers...</p>
-                <p>[OK] storage allocated</p>
-                <p>[OK] node is live</p>
-              </div>
-            </div>
+          <aside className="new-home__mascot">
+            <img
+              src="/mascot_750x750.png"
+              alt="ELD flame mascot"
+              className="new-home__mascot-image"
+              width={600}
+              height={600}
+            />
           </aside>
         </section>
 
