@@ -190,16 +190,15 @@
   height: 36px;
   margin: 0;
   padding: 0;
-  border: 1px solid var(--nh-border);
+  border: 0;
   color: var(--nh-theme-toggle-color);
-  background: var(--nh-theme-toggle-bg);
+  background: transparent;
   cursor: pointer;
-  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+  transition: color 160ms ease;
 }
 
 .new-home__theme-toggle:hover {
   color: var(--nh-text);
-  background: var(--nh-theme-toggle-hover);
 }
 
 .new-home__brand {
