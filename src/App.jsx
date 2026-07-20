@@ -179,15 +179,6 @@ function App() {
               automatic TTL expiry. Build decentralized applications on high-speed,
               temporary storage.
             </p>
-
-            <div className="new-home__hero-stats">
-              {heroStats.map((stat) => (
-                <div key={stat.label} className="new-home__mini-stat">
-                  <span className="new-home__mini-stat-label">{stat.label}</span>
-                  <strong className="new-home__mini-stat-value">{stat.value}</strong>
-                </div>
-              ))}
-            </div>
           </div>
 
           <aside className="new-home__mascot">
@@ -199,6 +190,15 @@ function App() {
               height={600}
             />
           </aside>
+
+          <div className="new-home__hero-stats">
+            {heroStats.map((stat) => (
+              <div key={stat.label} className="new-home__mini-stat">
+                <span className="new-home__mini-stat-label">{stat.label}</span>
+                <strong className="new-home__mini-stat-value">{stat.value}</strong>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section className="new-home__network-strip" aria-label="Network stats">
