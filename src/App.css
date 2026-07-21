@@ -742,11 +742,14 @@
     font-size: 2rem;
   }
 
-  .new-home__stats-grid,
   .new-home__feature-grid,
   .new-home__steps,
   .new-home__footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .new-home__stat-card:last-child:nth-child(odd) {
+    grid-column: span 2;
   }
 
   .new-home__mascot {
