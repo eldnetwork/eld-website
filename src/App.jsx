@@ -28,13 +28,10 @@ function MoonIcon() {
   )
 }
 
-const heroStats = [
+const protocolStats = [
   { label: 'Target TPS', value: '1000' },
   { label: 'Block Time', value: '1s' },
   { label: 'Token', value: 'ELD' },
-]
-
-const networkStats = [
   { label: 'Consensus', value: 'PoS' },
   { label: 'Testnet', value: 'LIVE' },
 ]
@@ -191,21 +188,13 @@ function App() {
             />
           </aside>
 
-          <div className="new-home__hero-stats">
-            {heroStats.map((stat) => (
-              <div key={stat.label} className="new-home__mini-stat">
-                <span className="new-home__mini-stat-label">{stat.label}</span>
-                <strong className="new-home__mini-stat-value">{stat.value}</strong>
-              </div>
-            ))}
-          </div>
         </section>
 
-        <section className="new-home__network-strip" aria-label="Network stats">
-          {networkStats.map((stat) => (
-            <div key={stat.label} className="new-home__network-stat">
-              <span>{stat.label}</span>
-              <strong>{stat.value}</strong>
+        <section className="new-home__stats-grid" aria-label="Protocol stats">
+          {protocolStats.map((stat) => (
+            <div key={stat.label} className="new-home__stat-card">
+              <span className="new-home__stat-label">{stat.label}</span>
+              <strong className="new-home__stat-value">{stat.value}</strong>
             </div>
           ))}
         </section>
