@@ -27,7 +27,7 @@
   --nh-theme-toggle-color: var(--nh-faint);
   --nh-theme-toggle-bg: var(--nh-button-ghost-bg);
   --nh-theme-toggle-hover: rgba(255, 255, 255, 0.1);
-  --nh-banner-bg: #1a1208;
+  --nh-banner-text: #0a0a0a;
   position: relative;
   min-height: 100vh;
   background: var(--nh-shell-bg);
@@ -62,7 +62,7 @@
     rgba(255, 255, 255, 0.88);
   --nh-cta-border: rgba(255, 122, 24, 0.28);
   --nh-theme-toggle-hover: rgba(15, 23, 42, 0.1);
-  --nh-banner-bg: #fff4eb;
+  --nh-banner-text: #0a0a0a;
 }
 
 .new-home,
@@ -135,15 +135,16 @@
   min-height: 34px;
   padding: 6px 16px;
   text-align: center;
-  background: var(--nh-banner-bg);
-  border-bottom: 1px solid var(--nh-border);
+  background: var(--nh-accent);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .new-home__social-banner-text {
-  color: var(--nh-muted);
+  color: var(--nh-banner-text);
   font-size: 0.68rem;
   line-height: 1.35;
   letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .new-home__social-banner-link {
