@@ -17,9 +17,7 @@
   --nh-button-ghost-bg: rgba(255, 255, 255, 0.02);
   --nh-button-hover-border: rgba(255, 255, 255, 0.2);
   --nh-button-primary-text: #fff7ef;
-  --nh-nav-active-bg: rgba(255, 122, 24, 0.04);
   --nh-panel-tint: rgba(255, 255, 255, 0.01);
-  --nh-command-bg: rgba(255, 255, 255, 0.03);
   --nh-cta-bg:
     linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.005)),
     rgba(10, 10, 10, 0.92);
@@ -28,6 +26,7 @@
   --nh-theme-toggle-bg: var(--nh-button-ghost-bg);
   --nh-theme-toggle-hover: rgba(255, 255, 255, 0.1);
   --nh-banner-text: #0a0a0a;
+  --nh-focus-ring: var(--nh-accent);
   position: relative;
   min-height: 100vh;
   background: var(--nh-shell-bg);
@@ -54,9 +53,7 @@
   --nh-button-ghost-bg: rgba(15, 23, 42, 0.04);
   --nh-button-hover-border: rgba(15, 23, 42, 0.22);
   --nh-button-primary-text: #fff7ef;
-  --nh-nav-active-bg: rgba(255, 122, 24, 0.08);
   --nh-panel-tint: rgba(255, 255, 255, 0.72);
-  --nh-command-bg: rgba(15, 23, 42, 0.04);
   --nh-cta-bg:
     linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(248, 250, 252, 0.92)),
     rgba(255, 255, 255, 0.88);
@@ -81,17 +78,39 @@
 }
 
 .new-home__brand-mark,
-.new-home__nav-link,
-.new-home__button,
 .new-home__mascot,
 .new-home__stat-card,
 .new-home__feature-card,
-.new-home__step-card,
-.new-home__command,
 .new-home__cta-panel,
 .new-home__footer-column,
 .new-home__theme-toggle {
   border-radius: 0 !important;
+}
+
+.new-home__skip-link {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  z-index: 100;
+  padding: 10px 14px;
+  background: var(--nh-accent);
+  color: #0a0a0a;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  transform: translateY(-200%);
+}
+
+.new-home__skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+.new-home a:focus-visible,
+.new-home button:focus-visible,
+.new-home__theme-toggle:focus-visible {
+  outline: 2px solid var(--nh-focus-ring);
+  outline-offset: 3px;
 }
 
 .new-home__grid {
@@ -240,47 +259,6 @@
   color: var(--nh-muted);
 }
 
-.new-home__nav {
-  display: flex;
-  justify-content: center;
-  min-width: 0;
-}
-
-.new-home__nav-link {
-  position: relative;
-  color: var(--nh-muted);
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.24em;
-  font-size: 0.7rem;
-  padding: 22px 18px;
-  border-left: 1px solid var(--nh-border);
-  border-right: 1px solid transparent;
-  transition:
-    color 160ms ease,
-    background-color 160ms ease,
-    border-color 160ms ease;
-}
-
-.new-home__nav-link:hover {
-  color: var(--nh-text);
-}
-
-.new-home__nav-link--active {
-  color: var(--nh-accent);
-  background: var(--nh-nav-active-bg);
-}
-
-.new-home__nav-link--active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2px;
-  background: var(--nh-accent);
-}
-
 .new-home__content {
   width: min(1440px, 100%);
   margin: 0 auto;
@@ -353,47 +331,6 @@
   line-height: 1.9;
 }
 
-.new-home__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 56px;
-}
-
-.new-home__button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 160px;
-  min-height: 52px;
-  padding: 0 20px;
-  border: 1px solid var(--nh-border);
-  color: var(--nh-text);
-  background: var(--nh-button-ghost-bg);
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.78rem;
-  transition:
-    border-color 160ms ease,
-    color 160ms ease,
-    background-color 160ms ease,
-    transform 160ms ease;
-  appearance: none;
-  box-shadow: none;
-}
-
-.new-home__button:hover {
-  border-color: var(--nh-button-hover-border);
-  transform: translateY(-1px);
-}
-
-.new-home__button--primary {
-  background: var(--nh-accent);
-  border-color: var(--nh-accent);
-  color: var(--nh-button-primary-text);
-}
-
 .new-home__mascot {
   grid-area: mascot;
   display: flex;
@@ -445,7 +382,6 @@
 }
 
 .new-home__feature-grid,
-.new-home__steps,
 .new-home__footer-grid {
   display: grid;
   border-top: 1px solid var(--nh-border);
@@ -457,7 +393,6 @@
 }
 
 .new-home__feature-card,
-.new-home__step-card,
 .new-home__footer-column {
   padding: 26px 22px 32px;
   border-right: 1px solid var(--nh-border);
@@ -479,8 +414,7 @@
   color: var(--nh-accent);
 }
 
-.new-home__feature-card h3,
-.new-home__step-card h3 {
+.new-home__feature-card h3 {
   margin: 0 0 16px;
   font-size: 1.28rem;
   line-height: 1.12;
@@ -489,7 +423,6 @@
 }
 
 .new-home__feature-card p,
-.new-home__step-card p,
 .new-home__cta-copy p,
 .new-home__footer-column p {
   margin: 0;
@@ -518,28 +451,6 @@
   text-transform: uppercase;
   letter-spacing: 0.24em;
   font-size: 0.62rem;
-}
-
-.new-home__steps {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.new-home__step-number {
-  display: block;
-  margin-bottom: 22px;
-  color: var(--nh-faint);
-  font-size: 0.66rem;
-  letter-spacing: 0.22em;
-}
-
-.new-home__command {
-  margin: 0 0 18px;
-  padding: 12px 14px;
-  border: 1px solid var(--nh-border);
-  background: var(--nh-command-bg);
-  color: var(--nh-accent);
-  font-size: 0.76rem;
-  letter-spacing: 0.04em;
 }
 
 .new-home__coin-panel {
@@ -655,8 +566,7 @@
     max-width: 420px;
   }
 
-  .new-home__stats-grid,
-  .new-home__steps {
+  .new-home__stats-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -679,26 +589,15 @@
     justify-content: flex-end;
     flex-wrap: nowrap;
     align-items: center;
-  }
-
-  .new-home__nav {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .new-home__nav-link {
-    padding: 10px 0;
-    border: none;
-    margin-right: 18px;
-  }
-
-  .new-home__header-meta {
     gap: 14px;
   }
 
   .new-home__header-link {
     letter-spacing: 0.14em;
     font-size: 0.64rem;
+    max-width: min(70vw, 420px);
+    text-align: right;
+    line-height: 1.1;
   }
 
   .new-home__theme-toggle {
@@ -706,15 +605,8 @@
     height: 34px;
   }
 
-  .new-home__header-link {
-    max-width: min(70vw, 420px);
-    text-align: right;
-    line-height: 1.1;
-  }
-
   .new-home__stats-grid,
   .new-home__feature-grid,
-  .new-home__steps,
   .new-home__footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -752,7 +644,6 @@
   }
 
   .new-home__feature-grid,
-  .new-home__steps,
   .new-home__footer-grid {
     grid-template-columns: 1fr;
   }

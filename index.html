@@ -9,6 +9,23 @@
       content="Eld is a decentralized ephemeral storage protocol. Earn ELD tokens by providing storage, share content-addressed files with automatic TTL expiry, and build decentralized apps. Testnet live 2026."
     />
     <meta name="theme-color" content="#000000" />
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('eld-home-theme')
+          var light =
+            stored === 'light' ||
+            (stored !== 'dark' && window.matchMedia('(prefers-color-scheme: light)').matches)
+          if (light) {
+            document.documentElement.classList.add('eld-theme-light')
+          }
+          var meta = document.querySelector('meta[name="theme-color"]')
+          if (meta) {
+            meta.setAttribute('content', light ? '#eff3f8' : '#000000')
+          }
+        } catch (_) {}
+      })()
+    </script>
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -18,20 +35,22 @@
       property="og:description"
       content="Eld is a decentralized ephemeral storage protocol. Earn ELD tokens by providing storage, share content-addressed files, and build decentralized apps. Testnet live 2026."
     />
-    <meta property="og:image" content="https://www.eld.network/eld-logo-150.png" />
-    <meta property="og:image:width" content="150" />
-    <meta property="og:image:height" content="150" />
+    <meta property="og:image" content="https://www.eld.network/og-1200x630.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Eld" />
     <meta property="og:locale" content="en" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@eld_network" />
     <meta name="twitter:url" content="https://www.eld.network/" />
     <meta name="twitter:title" content="Eld – Decentralized Ephemeral Storage Protocol" />
     <meta
       name="twitter:description"
       content="Eld is a decentralized ephemeral storage protocol. Earn ELD tokens by providing storage, share content-addressed files, and build decentralized apps. Testnet live 2026."
     />
-    <meta name="twitter:image" content="https://www.eld.network/eld-logo-150.png" />
+    <meta name="twitter:image" content="https://www.eld.network/og-1200x630.png" />
 
     <link rel="icon" type="image/png" sizes="16x16" href="/eld-logo-16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/eld-logo-32.png" />

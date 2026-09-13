@@ -8,7 +8,7 @@
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.eld.network)](https://www.eld.network)
 [![Stars](https://img.shields.io/github/stars/eldnetwork/eld-website)](https://github.com/eldnetwork/eld-website/stargazers)
 
-Marketing site for the [Eld](https://eld.network) decentralized ephemeral storage protocol, built with [Vite](https://vitejs.dev/) and React.
+Marketing site for the [Eld](https://www.eld.network) decentralized ephemeral storage protocol, built with [Vite](https://vitejs.dev/) and React.
 
 **Live site:** [https://www.eld.network](https://www.eld.network)
 
@@ -39,21 +39,13 @@ To preview the production build locally:
 npm run preview
 ```
 
-## Deploy
-
-Deployment is local-only. Copy `.env.example` to `.env`, fill in your values, then run:
+## CI
 
 ```bash
-./scripts/deploy.local.sh
+npm run ci
 ```
 
-To invalidate CloudFront cache without redeploying:
-
-```bash
-./scripts/invalidate.local.sh
-```
-
-Requires the AWS CLI configured with credentials that can write to the S3 bucket and invalidate the CloudFront distribution.
+Runs format check, lint, tests, audit, and production build.
 
 ## Links
 
