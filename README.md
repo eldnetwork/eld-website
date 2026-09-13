@@ -1,5 +1,12 @@
 # Eld Website
 
+![Node](https://img.shields.io/badge/node-%3E%3D20-339933?logo=nodedotjs&logoColor=white)
+![React](https://img.shields.io/badge/react-18-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/vite-5-646CFF?logo=vite&logoColor=white)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.eld.network)](https://www.eld.network)
+[![Stars](https://img.shields.io/github/stars/eldnetwork/eld-website)](https://github.com/eldnetwork/eld-website/stargazers)
+
 Marketing site for the [Eld](https://eld.network) decentralized ephemeral storage protocol, built with [Vite](https://vitejs.dev/) and React.
 
 **Live site:** [https://www.eld.network](https://www.eld.network)
