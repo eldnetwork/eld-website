@@ -20,6 +20,14 @@
   box-sizing: border-box;
 }
 
+html {
+  color-scheme: dark;
+}
+
+html.eld-theme-light {
+  color-scheme: light;
+}
+
 body {
   font-family: 'IoskeleyMono', monospace;
   -webkit-font-smoothing: antialiased;

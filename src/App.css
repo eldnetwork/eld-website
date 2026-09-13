@@ -94,7 +94,7 @@
 .new-home a:focus-visible,
 .new-home button:focus-visible,
 .new-home__theme-toggle:focus-visible {
-  outline: 2px solid var(--nh-focus-ring);
+  outline: 2px solid var(--nh-focus-ring, var(--nh-accent));
   outline-offset: 3px;
 }
 

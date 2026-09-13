@@ -31,6 +31,7 @@ function App() {
 
   useEffect(() => {
     document.documentElement.classList.toggle('eld-theme-light', isLightTheme)
+    document.documentElement.style.colorScheme = isLightTheme ? 'light' : 'dark'
     const meta = document.querySelector('meta[name="theme-color"]')
     if (meta) {
       meta.setAttribute('content', isLightTheme ? '#eff3f8' : '#000000')

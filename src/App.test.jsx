@@ -20,5 +20,8 @@ describe('App', () => {
       'href',
       'https://github.com/eldnetwork',
     )
+
+    expect(screen.getByRole('link', { name: /skip to content/i })).toHaveAttribute('href', '#top')
+    expect(screen.getByRole('button', { name: /dark mode|light mode/i })).toBeInTheDocument()
   })
 })

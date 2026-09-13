@@ -19,6 +19,7 @@
           if (light) {
             document.documentElement.classList.add('eld-theme-light')
           }
+          document.documentElement.style.colorScheme = light ? 'light' : 'dark'
           var meta = document.querySelector('meta[name="theme-color"]')
           if (meta) {
             meta.setAttribute('content', light ? '#eff3f8' : '#000000')
