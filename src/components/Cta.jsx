@@ -23,7 +23,7 @@ function Cta() {
         </p>
       </div>
     </section>
-  )
+  );
 }
 
-export default Cta
+export default Cta;

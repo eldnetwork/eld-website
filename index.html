@@ -10,22 +10,22 @@
     />
     <meta name="theme-color" content="#000000" />
     <script>
-      ;(function () {
+      (function () {
         try {
-          var stored = localStorage.getItem('eld-home-theme')
+          var stored = localStorage.getItem('eld-home-theme');
           var light =
             stored === 'light' ||
-            (stored !== 'dark' && window.matchMedia('(prefers-color-scheme: light)').matches)
+            (stored !== 'dark' && window.matchMedia('(prefers-color-scheme: light)').matches);
           if (light) {
-            document.documentElement.classList.add('eld-theme-light')
+            document.documentElement.classList.add('eld-theme-light');
           }
-          document.documentElement.style.colorScheme = light ? 'light' : 'dark'
-          var meta = document.querySelector('meta[name="theme-color"]')
+          document.documentElement.style.colorScheme = light ? 'light' : 'dark';
+          var meta = document.querySelector('meta[name="theme-color"]');
           if (meta) {
-            meta.setAttribute('content', light ? '#eff3f8' : '#000000')
+            meta.setAttribute('content', light ? '#eff3f8' : '#000000');
           }
         } catch (_) {}
-      })()
+      })();
     </script>
 
     <!-- Open Graph -->

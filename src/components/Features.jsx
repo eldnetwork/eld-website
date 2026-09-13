@@ -1,4 +1,4 @@
-import { features } from '../content/home'
+import { features } from '../content/home';
 
 function Features() {
   return (
@@ -18,7 +18,7 @@ function Features() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Features
+export default Features;

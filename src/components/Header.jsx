@@ -1,4 +1,4 @@
-import ThemeToggle from './ThemeToggle'
+import ThemeToggle from './ThemeToggle';
 
 function Header({ isLightTheme, onThemeToggle }) {
   return (
@@ -39,7 +39,7 @@ function Header({ isLightTheme, onThemeToggle }) {
         </span>
       </div>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

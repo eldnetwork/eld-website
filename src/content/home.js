@@ -4,7 +4,7 @@ export const protocolStats = [
   { label: 'Token', value: 'ELD' },
   { label: 'Consensus', value: 'PoS' },
   { label: 'Testnet', value: 'LIVE' },
-]
+];
 
 export const features = [
   {
@@ -28,7 +28,7 @@ export const features = [
     body: 'Full API and SDK access. Perfect for live streaming, caching layers, temporary media, session data, social feeds, and any application that needs fast, unstoppable ephemeral storage that does not live forever.',
     note: 'Open protocol',
   },
-]
+];
 
 export const footerColumns = [
   {
@@ -54,4 +54,4 @@ export const footerColumns = [
     heading: 'Community',
     items: [{ label: 'X / Twitter', href: 'https://x.com/eld_network' }],
   },
-]
+];

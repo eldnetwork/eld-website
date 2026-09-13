@@ -1,4 +1,4 @@
-import { protocolStats } from '../content/home'
+import { protocolStats } from '../content/home';
 
 function Stats() {
   return (
@@ -15,7 +15,7 @@ function Stats() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Stats
+export default Stats;

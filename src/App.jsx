@@ -1,50 +1,50 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Stats from './components/Stats'
-import Features from './components/Features'
-import CoinPanel from './components/CoinPanel'
-import Cta from './components/Cta'
-import Footer from './components/Footer'
+import { useEffect, useState } from 'react';
+import './App.css';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Stats from './components/Stats';
+import Features from './components/Features';
+import CoinPanel from './components/CoinPanel';
+import Cta from './components/Cta';
+import Footer from './components/Footer';
 
 function resolveInitialLightTheme() {
   if (typeof window === 'undefined') {
-    return false
+    return false;
   }
   try {
-    const stored = window.localStorage.getItem('eld-home-theme')
+    const stored = window.localStorage.getItem('eld-home-theme');
     if (stored === 'light') {
-      return true
+      return true;
     }
     if (stored === 'dark') {
-      return false
+      return false;
     }
-    return window.matchMedia('(prefers-color-scheme: light)').matches
+    return window.matchMedia('(prefers-color-scheme: light)').matches;
   } catch {
-    return false
+    return false;
   }
 }
 
 function App() {
-  const [isLightTheme, setIsLightTheme] = useState(resolveInitialLightTheme)
+  const [isLightTheme, setIsLightTheme] = useState(resolveInitialLightTheme);
 
   useEffect(() => {
-    document.documentElement.classList.toggle('eld-theme-light', isLightTheme)
-    document.documentElement.style.colorScheme = isLightTheme ? 'light' : 'dark'
-    const meta = document.querySelector('meta[name="theme-color"]')
+    document.documentElement.classList.toggle('eld-theme-light', isLightTheme);
+    document.documentElement.style.colorScheme = isLightTheme ? 'light' : 'dark';
+    const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) {
-      meta.setAttribute('content', isLightTheme ? '#eff3f8' : '#000000')
+      meta.setAttribute('content', isLightTheme ? '#eff3f8' : '#000000');
     }
-  }, [isLightTheme])
+  }, [isLightTheme]);
 
   const handleThemeToggle = () => {
     setIsLightTheme((prev) => {
-      const nextIsLight = !prev
-      window.localStorage.setItem('eld-home-theme', nextIsLight ? 'light' : 'dark')
-      return nextIsLight
-    })
-  }
+      const nextIsLight = !prev;
+      window.localStorage.setItem('eld-home-theme', nextIsLight ? 'light' : 'dark');
+      return nextIsLight;
+    });
+  };
 
   return (
     <div className={`new-home${isLightTheme ? ' new-home--light' : ''}`}>
@@ -65,7 +65,7 @@ function App() {
 
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -31,7 +31,7 @@ function Hero() {
         </picture>
       </aside>
     </section>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

@@ -1,4 +1,4 @@
-import { footerColumns } from '../content/home'
+import { footerColumns } from '../content/home';
 
 function Footer() {
   return (
@@ -30,7 +30,7 @@ function Footer() {
         <span>© 2026 ELD NETWORK. ALL RIGHTS RESERVED.</span>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

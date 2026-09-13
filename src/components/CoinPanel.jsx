@@ -15,7 +15,7 @@ function CoinPanel() {
         />
       </picture>
     </section>
-  )
+  );
 }
 
-export default CoinPanel
+export default CoinPanel;
