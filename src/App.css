@@ -1,11 +1,9 @@
 .new-home {
-  --nh-bg: #080808;
   --nh-border: rgba(255, 255, 255, 0.08);
   --nh-text: #f3f3f0;
   --nh-muted: rgba(243, 243, 240, 0.68);
   --nh-faint: rgba(243, 243, 240, 0.4);
   --nh-accent: #ff7a18;
-  --nh-success: #62d58b;
   --nh-shell-bg:
     radial-gradient(circle at top center, rgba(255, 122, 24, 0.08), transparent 32%),
     linear-gradient(180deg, #0a0a0a 0%, #070707 100%);
@@ -14,17 +12,12 @@
   --nh-grid-opacity: 0.35;
   --nh-brand-mark-color: #fff;
   --nh-brand-mark-border: rgba(255, 255, 255, 0.08);
-  --nh-button-ghost-bg: rgba(255, 255, 255, 0.02);
-  --nh-button-hover-border: rgba(255, 255, 255, 0.2);
-  --nh-button-primary-text: #fff7ef;
   --nh-panel-tint: rgba(255, 255, 255, 0.01);
   --nh-cta-bg:
     linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.005)),
     rgba(10, 10, 10, 0.92);
   --nh-cta-border: rgba(255, 122, 24, 0.18);
   --nh-theme-toggle-color: var(--nh-faint);
-  --nh-theme-toggle-bg: var(--nh-button-ghost-bg);
-  --nh-theme-toggle-hover: rgba(255, 255, 255, 0.1);
   --nh-banner-text: #0a0a0a;
   --nh-focus-ring: var(--nh-accent);
   position: relative;
@@ -35,13 +28,11 @@
 }
 
 .new-home--light {
-  --nh-bg: #f4f6fa;
   --nh-border: rgba(18, 31, 53, 0.16);
   --nh-text: #0f172a;
   --nh-muted: rgba(15, 23, 42, 0.72);
   --nh-faint: rgba(15, 23, 42, 0.48);
   --nh-accent: #ff7a18;
-  --nh-success: #1f9d5a;
   --nh-shell-bg:
     radial-gradient(circle at top center, rgba(255, 122, 24, 0.16), transparent 42%),
     linear-gradient(180deg, #fafbfc 0%, #eff3f8 100%);
@@ -50,15 +41,11 @@
   --nh-grid-opacity: 0.5;
   --nh-brand-mark-color: #fff;
   --nh-brand-mark-border: rgba(255, 255, 255, 0.22);
-  --nh-button-ghost-bg: rgba(15, 23, 42, 0.04);
-  --nh-button-hover-border: rgba(15, 23, 42, 0.22);
-  --nh-button-primary-text: #fff7ef;
   --nh-panel-tint: rgba(255, 255, 255, 0.72);
   --nh-cta-bg:
     linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(248, 250, 252, 0.92)),
     rgba(255, 255, 255, 0.88);
   --nh-cta-border: rgba(255, 122, 24, 0.28);
-  --nh-theme-toggle-hover: rgba(15, 23, 42, 0.1);
   --nh-banner-text: #0a0a0a;
 }
 
@@ -67,13 +54,11 @@
   box-sizing: border-box;
 }
 
-.new-home input,
 .new-home button,
 .new-home a,
 .new-home div,
 .new-home section,
-.new-home aside,
-.new-home pre {
+.new-home aside {
   border-radius: 0;
 }
 

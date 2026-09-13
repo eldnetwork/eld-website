@@ -11,7 +11,6 @@ dist-ssr
 .DS_Store
 .env
 .env.*
-!.env.example
 scripts/deploy.local.sh
 scripts/invalidate.local.sh
 design-ideas/

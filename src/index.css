@@ -8,30 +8,6 @@
 
 @font-face {
   font-family: 'IoskeleyMono';
-  src: url('./fonts/IoskeleyMono-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'IoskeleyMono';
-  src: url('./fonts/IoskeleyMono-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'IoskeleyMono';
-  src: url('./fonts/IoskeleyMono-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'IoskeleyMono';
   src: url('./fonts/IoskeleyMono-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
