@@ -269,6 +269,7 @@
 .new-home__eyebrow {
   margin: 0 0 26px;
   font-size: 0.72rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.32em;
   color: var(--nh-muted);
@@ -332,10 +333,13 @@
   object-fit: contain;
 }
 
+.new-home__stats {
+  margin-top: 24px;
+}
+
 .new-home__stats-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin-top: 24px;
   border-top: 1px solid var(--nh-border);
   border-left: 1px solid var(--nh-border);
 }
@@ -462,7 +466,7 @@
   max-width: 680px;
 }
 
-.new-home__cta-copy h2 {
+.new-home__cta-headline {
   margin: 0 0 28px;
   font-size: clamp(4rem, 8vw, 6.6rem);
   line-height: 0.9;
@@ -471,7 +475,7 @@
   text-transform: uppercase;
 }
 
-.new-home__cta-copy h2 span {
+.new-home__cta-headline span {
   color: var(--nh-accent);
 }
 

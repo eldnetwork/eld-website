@@ -6,7 +6,12 @@ describe('App', () => {
   it('renders the heading and primary external links', () => {
     render(<App />)
 
-    expect(screen.getByRole('heading', { level: 1, name: /ELD/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        level: 1,
+        name: /Decentralized Ephemeral Storage Protocol/i,
+      }),
+    ).toBeInTheDocument()
 
     expect(screen.getByRole('link', { name: 'Documentation' })).toHaveAttribute(
       'href',

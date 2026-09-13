@@ -3,7 +3,7 @@ import { features } from '../content/home'
 function Features() {
   return (
     <section id="explorer" className="new-home__section">
-      <p className="new-home__eyebrow">How it works</p>
+      <h2 className="new-home__eyebrow">How it works</h2>
       <div className="new-home__feature-grid">
         {features.map((feature) => (
           <article key={feature.number} className="new-home__feature-card">

@@ -6,7 +6,7 @@
     <link rel="canonical" href="https://www.eld.network/" />
     <meta
       name="description"
-      content="Eld is a decentralized ephemeral storage protocol. Earn ELD tokens by providing storage, share content-addressed files with automatic TTL expiry, and build decentralized apps. Testnet live 2026."
+      content="Eld is a decentralized protocol for ephemeral, content-addressed storage. Set a TTL, verify data while it is live, and let it expire."
     />
     <meta name="theme-color" content="#000000" />
     <script>
@@ -34,11 +34,12 @@
     <meta property="og:title" content="Eld – Decentralized Ephemeral Storage Protocol" />
     <meta
       property="og:description"
-      content="Eld is a decentralized ephemeral storage protocol. Earn ELD tokens by providing storage, share content-addressed files, and build decentralized apps. Testnet live 2026."
+      content="Eld is a decentralized protocol for ephemeral, content-addressed storage. Set a TTL, verify data while it is live, and let it expire."
     />
     <meta property="og:image" content="https://www.eld.network/og-1200x630.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Eld – decentralized ephemeral storage protocol" />
     <meta property="og:site_name" content="Eld" />
     <meta property="og:locale" content="en" />
 
@@ -49,9 +50,10 @@
     <meta name="twitter:title" content="Eld – Decentralized Ephemeral Storage Protocol" />
     <meta
       name="twitter:description"
-      content="Eld is a decentralized ephemeral storage protocol. Earn ELD tokens by providing storage, share content-addressed files, and build decentralized apps. Testnet live 2026."
+      content="Eld is a decentralized protocol for ephemeral, content-addressed storage. Set a TTL, verify data while it is live, and let it expire."
     />
     <meta name="twitter:image" content="https://www.eld.network/og-1200x630.png" />
+    <meta name="twitter:image:alt" content="Eld – decentralized ephemeral storage protocol" />
 
     <link rel="icon" type="image/png" sizes="16x16" href="/eld-logo-16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/eld-logo-32.png" />
@@ -67,12 +69,48 @@
         "url": "https://www.eld.network",
         "logo": "https://www.eld.network/eld-logo-150.png",
         "sameAs": ["https://x.com/eld_network", "https://github.com/eldnetwork"],
-        "description": "Eld is a decentralized ephemeral storage protocol. Earn ELD tokens by providing storage, share content-addressed files, and build decentralized apps. Testnet live 2026."
+        "description": "Eld is a decentralized protocol for ephemeral, content-addressed storage. Set a TTL, verify data while it is live, and let it expire."
+      }
+    </script>
+
+    <!-- JSON-LD WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Eld",
+        "url": "https://www.eld.network",
+        "description": "Eld is a decentralized protocol for ephemeral, content-addressed storage. Set a TTL, verify data while it is live, and let it expire.",
+        "inLanguage": "en"
+      }
+    </script>
+
+    <!-- JSON-LD SoftwareApplication -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Eld",
+        "applicationCategory": "DeveloperApplication",
+        "url": "https://docs.eld.network",
+        "description": "Eld is a decentralized protocol for ephemeral, content-addressed storage. Set a TTL, verify data while it is live, and let it expire."
       }
     </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <h1>Decentralized Ephemeral Storage Protocol</h1>
+      <p>
+        Eld is a decentralized protocol for ephemeral, content-addressed storage. Set a TTL, verify
+        data while it is live, and let it expire.
+      </p>
+      <ul>
+        <li><a href="https://docs.eld.network">Documentation</a></li>
+        <li><a href="https://explorer.eld.network">Block explorer</a></li>
+        <li><a href="https://github.com/eldnetwork">GitHub</a></li>
+      </ul>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

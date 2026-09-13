@@ -1,13 +1,13 @@
 function Cta() {
   return (
     <section id="testnet" className="new-home__cta-panel">
-      <p className="new-home__eyebrow">Ignite the network</p>
+      <h2 className="new-home__eyebrow">Testnet</h2>
       <div className="new-home__cta-copy">
-        <h2>
+        <p className="new-home__cta-headline">
           TESTNET
           <br />
           <span>IS LIVE.</span>
-        </h2>
+        </p>
         <p>
           Be among the first to run a node, earn tokens, and help shape the future of decentralized
           ephemeral storage.

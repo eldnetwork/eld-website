@@ -3,10 +3,10 @@ function Hero() {
     <section className="new-home__hero">
       <div className="new-home__hero-copy">
         <p className="new-home__eyebrow">ELD NETWORK // TESTNET 2026</p>
-        <h1 className="new-home__title">
+        <p className="new-home__title" aria-hidden="true">
           ELD<span className="new-home__title-dot">.</span>
-        </h1>
-        <h2 className="new-home__subtitle">Decentralized Ephemeral Storage Protocol.</h2>
+        </p>
+        <h1 className="new-home__subtitle">Decentralized Ephemeral Storage Protocol.</h1>
         <p className="new-home__description">
           /eld/ - old nordic word for fire.
           <br />
