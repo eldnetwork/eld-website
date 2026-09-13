@@ -10,6 +10,8 @@
 
 Marketing site for the [Eld](https://www.eld.network) decentralized ephemeral storage protocol, built with [Vite](https://vitejs.dev/) and React.
 
+This repository is the public marketing site only — not the Eld protocol, node software, or SDKs. For protocol docs and the live chain, see [Documentation](https://docs.eld.network) and the [block explorer](https://explorer.eld.network).
+
 **Live site:** [https://www.eld.network](https://www.eld.network)
 
 ## Prerequisites
