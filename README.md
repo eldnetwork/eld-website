@@ -4,6 +4,7 @@
 ![React](https://img.shields.io/badge/react-18-61DAFB?logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/vite-5-646CFF?logo=vite&logoColor=white)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![CI](https://github.com/eldnetwork/eld-website/actions/workflows/ci.yml/badge.svg)](https://github.com/eldnetwork/eld-website/actions/workflows/ci.yml)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.eld.network)](https://www.eld.network)
 [![Stars](https://img.shields.io/github/stars/eldnetwork/eld-website)](https://github.com/eldnetwork/eld-website/stargazers)
 

@@ -256,7 +256,10 @@
   padding: 22px 18px;
   border-left: 1px solid var(--nh-border);
   border-right: 1px solid transparent;
-  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
 }
 
 .new-home__nav-link:hover {
@@ -287,8 +290,7 @@
 .new-home__hero {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) 600px;
-  grid-template-areas:
-    'copy mascot';
+  grid-template-areas: 'copy mascot';
   column-gap: 48px;
   row-gap: 0;
   min-height: calc(100vh - 140px);
@@ -372,7 +374,11 @@
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.78rem;
-  transition: border-color 160ms ease, color 160ms ease, background-color 160ms ease, transform 160ms ease;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease,
+    background-color 160ms ease,
+    transform 160ms ease;
   appearance: none;
   box-shadow: none;
 }
@@ -496,7 +502,9 @@
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: color 160ms ease, border-color 160ms ease;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease;
 }
 
 .new-home__footer-link:hover {

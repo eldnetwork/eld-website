@@ -3,7 +3,14 @@ import './App.css'
 
 function SunIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
       <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
       <path
         stroke="currentColor"
@@ -17,7 +24,14 @@ function SunIcon() {
 
 function MoonIcon() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
       <path
         stroke="currentColor"
         strokeWidth="2"
@@ -41,24 +55,21 @@ const features = [
     number: '01',
     eyebrow: 'Earn',
     title: 'Provide Storage',
-    body:
-      'Run a node on any device - laptop, phone, server. Contribute disk space. Earn ELD tokens proportional to uptime and capacity.',
+    body: 'Run a node on any device - laptop, phone, server. Contribute disk space. Earn ELD tokens proportional to uptime and capacity.',
     note: 'Any device',
   },
   {
     number: '02',
     eyebrow: 'Share',
     title: 'Ephemeral Content-Addressed Data',
-    body:
-      'Upload files identified by their cryptographic hash. Set your own TTL (Time To Live). Data lives exactly as long as you need, then automatically expires and is cleaned from the network. Fast, cheap, and self-managing.',
+    body: 'Upload files identified by their cryptographic hash. Set your own TTL (Time To Live). Data lives exactly as long as you need, then automatically expires and is cleaned from the network. Fast, cheap, and self-managing.',
     note: 'TTL-controlled - Automatic expiry',
   },
   {
     number: '03',
     eyebrow: 'Build',
     title: 'Decentralized Apps',
-    body:
-      'Full API and SDK access. Perfect for live streaming, caching layers, temporary media, session data, social feeds, and any application that needs fast, unstoppable storage that does not live forever.',
+    body: 'Full API and SDK access. Perfect for live streaming, caching layers, temporary media, session data, social feeds, and any application that needs fast, unstoppable storage that does not live forever.',
     note: 'Open protocol',
   },
 ]
@@ -73,7 +84,7 @@ const footerColumns = [
     items: [
       { label: 'Litepaper', href: 'https://docs.eld.network/litepaper' },
       { label: 'Roadmap', href: 'https://docs.eld.network/roadmap' },
-      { label: 'Documentation', href: 'https://docs.eld.network' }
+      { label: 'Documentation', href: 'https://docs.eld.network' },
     ],
   },
   {
@@ -122,7 +133,7 @@ function App() {
           <div className="new-home__brand-mark">E</div>
           <div className="new-home__brand-text">
             <span className="new-home__brand-name">ELD</span>
-            <span className="new-home__brand-divider">//</span>
+            <span className="new-home__brand-divider">{'//'}</span>
             <span className="new-home__brand-subtitle">NETWORK</span>
           </div>
         </div>
@@ -172,9 +183,8 @@ function App() {
             <p className="new-home__description">
               /eld/ - old nordic word for fire.
               <br />
-              Earn tokens by providing storage. Share fast, content-addressed files with
-              automatic TTL expiry. Build decentralized applications on high-speed,
-              temporary storage.
+              Earn tokens by providing storage. Share fast, content-addressed files with automatic
+              TTL expiry. Build decentralized applications on high-speed, temporary storage.
             </p>
           </div>
 
@@ -187,7 +197,6 @@ function App() {
               height={600}
             />
           </aside>
-
         </section>
 
         <section className="new-home__stats-grid" aria-label="Protocol stats">
@@ -235,8 +244,8 @@ function App() {
               <span>IS LIVE.</span>
             </h2>
             <p>
-              Be among the first to run a node, earn tokens, and help shape
-              the future of decentralized ephemeral storage.
+              Be among the first to run a node, earn tokens, and help shape the future of
+              decentralized ephemeral storage.
               <br />
               <a
                 href="https://explorer.eld.network"
@@ -256,7 +265,7 @@ function App() {
           {footerColumns.map((column) => (
             <div key={column.heading} className="new-home__footer-column">
               <h3>{column.heading}</h3>
-              {column.items.map((item) => (
+              {column.items.map((item) =>
                 typeof item === 'string' ? (
                   <p key={item}>{item}</p>
                 ) : (
@@ -270,8 +279,8 @@ function App() {
                       {item.label}
                     </a>
                   </p>
-                )
-              ))}
+                ),
+              )}
             </div>
           ))}
         </div>
