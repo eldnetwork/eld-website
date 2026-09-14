@@ -1,6 +1,6 @@
 {
   "name": "eld-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Marketing site for the Eld decentralized ephemeral storage protocol",
   "homepage": "https://www.eld.network",
   "type": "module",
