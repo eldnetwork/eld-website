@@ -14,6 +14,8 @@ This repository is the public marketing site only — not the Eld protocol, node
 
 **Live site:** [https://www.eld.network](https://www.eld.network)
 
+![Eld Website home page](docs/screenshot-home.png)
+
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) >= 20
